@@ -1,0 +1,7 @@
+{
+    "name": "Unnamed_RPG",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "nodemon app.js"
+    }
+}

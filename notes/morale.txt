@@ -1,0 +1,11 @@
+Morale:
+
+-As morale lowers, combat effectiveness decreases
+-Certain characters will never have morale completely depleted or decreased past a certain threshold
+-Scale:
+	-100%: Full effectiveness
+	-50%: All damage taken increased by 10%, 50% more likely to be under status effects, deal 10% less damage to enemies. 10% chance to whiff attacks, 33% chance to ??? (can't remember what I was thinking here)
+	-0%: All damage taken increased by 25%, unable to resist any status effects, deal 25% less damage to enemies
+	
+LOSING ALL MORALE PUTS YOU AT RISK OF DEATH
+You wouldn't normally die, just get knocked out of a fight and forced to retreat. Having progressively lower morale leads to higher chance of death.

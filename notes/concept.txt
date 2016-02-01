@@ -1,0 +1,51 @@
+What is it?
+
+This will be a 2D turn-based RPG where players must heavily manage their party's status in order to effectively fight the numerous evils in the world and survive. 
+
+
+Major Features:
+
+Players start class-less, eventually learning and mastering a combat art of their choice, or widening their skill set to multiple arts if they wish. Along the way, players will encounter NPCs that have the potential to join their party. These NPCs will have unique personalities, having a set of morals that give them a sense of direction in the world. If the player makes choices or acts in a way that is favorable to that NPC, they will gain respect from them, or loyalty if they are a part of the player's party. 
+
+
+Player Characteristics:
+
+When a player begins his/her journey, they will be given a short questionnaire that determines their base statistics and affinities based on their answers. After they have finished said questionnaire, they are given the opportunity to modify their stats freely if they wish to do so. Players have a set of morals that will affect which NPCs can join their party. These morals will also influence the effectiveness of a player's actions. For example, a player who is naturally selfless will be more effective at healing and supporting their allies.
+
+
+Player Statistics:
+
+Health: If this runs out, the player will be knocked out and unable to take action. If knocked out, the player regains health in the form of unconscious health.
+
+Unconscious Health: If this runs out, the player will die. Unconscious health is used in place of normal health when a player is knocked out of a battle. The player can still be hurt if knocked out, and eventually killed.
+
+Strength: Affects the damage of physical abilities and their critical damage multiplier.
+
+Finesse: Affects the effectiveness of physical abilities and/or their critical chance.
+
+Intellect: Affects the damage of magical abilities and their critical damage multiplier.
+
+Affinity: Affects the effectiveness of magical abilities and/or their critical chance.
+
+Will: Affects health/unconscious health. With a high enough will stat, the player can potentially survive and stay conscious after devastating or mortal wounds.
+
+Agility: Affects how nimble the player is. Increases their chance to take the first turn in combat as well as dodge or parry attacks.
+
+Charisma: Affects conversations.
+
+
+Combat:
+
+For now, players will have a simple list of actions to take in battle: fight, inventory, and flee. Fight will list actions that a player can take to damage or impair their enemies, inventory will display a list of items they can use, and flee will attempt to take the player out of battle. Eventually, I want something interactive to be included in fighting an enemy, such as swiping at an enemy with the mouse to damage them. Powerful abilities that have the potential to decimate enemies will need to be activated by pressing a sequence of keys in the correct order. 
+
+
+Player Interactions:
+
+// Something about how morals affect a player's conversations/interactions with NPCs. Something like, if they are selfless, NPCs like a priest would respect them more or be more loyal to them if in a party with them.
+
+In this world, 
+
+
+Technologies:
+
+CreateJS - Rendering game screen, playing sounds/animations, handling user input
