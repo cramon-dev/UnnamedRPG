@@ -34,6 +34,11 @@ Agility: Affects how nimble the player is. Increases their chance to take the fi
 Charisma: Affects conversations.
 
 
+Monsters:
+
+Monsters should act like humans. They should have morally apprehensible traits, and statistics similar to a human player in order to give them a challenge.
+
+
 Combat:
 
 For now, players will have a simple list of actions to take in battle: fight, inventory, and flee. Fight will list actions that a player can take to damage or impair their enemies, inventory will display a list of items they can use, and flee will attempt to take the player out of battle. Eventually, I want something interactive to be included in fighting an enemy, such as swiping at an enemy with the mouse to damage them. Powerful abilities that have the potential to decimate enemies will need to be activated by pressing a sequence of keys in the correct order. 
