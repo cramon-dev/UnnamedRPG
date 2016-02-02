@@ -1,33 +1,21 @@
-function Player(name, str, fin, intl, aff, wil, agl, chr) {
-	this.name = '';
+function Player(stats) { 
+	this.name = stats.name;
 	this.isDowned = false;
-	this.strength = str;
-	this.finesse = fin;
-	this.intellect = intl;
-	this.affinity = aff;
-	this.will = wil;
-	this.agility = agl;
-	this.charisma = chr;
+	this.health = 1; // Come up with some formula that determines base health from stats
+	this.strength = stats.str;
+	this.finesse = stats.fin;
+	this.intellect = stats.intl;
+	this.affinity = stats.aff;
+	this.will = stats.wil;
+	this.agility = stats.agl;
+	this.charisma = stats.chr;
 }
+
+Player.prototype = new Character();
+Player.prototype.constructor = Player;
 
 Player.prototype.getHealth = function() {
 	return this.health;
-}
-
-Player.prototype.isDowned = function() {
-	return this.isDowned;
-}
-
-Player.prototype.getStats = function() {
-	return {
-		strength: this.strength,
-		finesse: this.finesse,
-		intellect: this.intellect,
-		affinity: this.affinity,
-		will: this.will,
-		agility: this.agility,
-		charisma: this.charisma
-	}
 }
 
 Player.prototype.levelUp = function(stats) {
