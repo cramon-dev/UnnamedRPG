@@ -1,19 +1,32 @@
-function Player(stats) { 
-	this.name = stats.name;
+var Character = require('./character.js');
+
+function Player() { 
+	this.name = this.name;
 	this.isDowned = false;
 	this.statusEffects = this.statusEffects;
 	this.health = 1; // Come up with some formula that determines base health from stats
-	this.strength = stats.str;
-	this.finesse = stats.fin;
-	this.intellect = stats.intl;
-	this.affinity = stats.aff;
-	this.will = stats.wil;
-	this.agility = stats.agl;
-	this.charisma = stats.chr;
+	this.strength = this.str;
+	this.finesse = this.fin;
+	this.intellect = this.intl;
+	this.affinity = this.aff;
+	this.will = this.wil;
+	this.agility = this.agl;
+	this.charisma = this.chr;
 }
 
 Player.prototype = new Character();
 Player.prototype.constructor = Player;
+
+Player.prototype.initPlayer = function(stats) {
+	this.name = stats.name;
+	this.strength = stats.strength;
+	this.finesse = stats.finesse;
+	this.intellect = stats.intellect;
+	this.affinity = stats.affinity;
+	this.will = stats.will;
+	this.agility = stats.agility;
+	this.charisma = stats.charisma;
+};
 
 Player.prototype.levelUp = function(stats) {
 	this.strength += stats.strength;
@@ -23,7 +36,9 @@ Player.prototype.levelUp = function(stats) {
 	this.will += stats.will;
 	this.agility += stats.agility;
 	this.charisma += stats.charisma;
-}
+};
+
+module.exports = Player;
 
 // Health: If this runs out, the player will be knocked out and unable to take action. If knocked out, the player regains health in the form of unconscious health.
 

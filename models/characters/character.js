@@ -33,4 +33,6 @@ Character.prototype = {
 			charisma: this.charisma
 		};
 	}
-}
+};
+
+module.exports = Character;

@@ -14,3 +14,5 @@ function NPC(stats) {
 
 NPC.prototype = new Character();
 NPC.prototype.constructor = NPC;
+
+module.exports = NPC;
