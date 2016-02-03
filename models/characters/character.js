@@ -1,6 +1,7 @@
 function Character() {
 	this.name = '';
 	this.isDowned = false;
+	this.statusEffects = [];
 	this.health = 1; // Come up with some formula that determines base health from stats
 	this.strength = 0;
 	this.finesse = 0;
@@ -13,7 +14,11 @@ function Character() {
 
 Character.prototype = {
 	getStatus: function() {
-		return { health: this.health, isDowned: this.isDowned };
+		return { health: this.health, isDowned: this.isDowned, statusEffects: this.statusEffects };
+	},
+
+	getHealth: function() {
+		return this.health;
 	},
 
 	getStats: function() {

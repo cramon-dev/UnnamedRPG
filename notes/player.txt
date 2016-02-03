@@ -1,3 +1,14 @@
 Player
 
--Player can choose to play as a class
+-Should I have an experience based system? My thought was that players would gain new abilities and become more effective in combat based on the skills they use. A player that mainly uses melee weapons and attacks with strength rather than finesse would gain stats in strength, for example.
+
+-What should a player have?
+	-Stats
+	-Status effects
+	-Inventory
+	-Equipment
+	-Weight load
+	-Tool belt (a player would have items on their tool belt; attempting to use items that aren't on their tool belt will force them to use that turn to search for the item in their inventory)
+	-Fatigue
+	-Morale
+	-Skills

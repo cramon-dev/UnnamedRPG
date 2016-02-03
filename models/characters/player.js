@@ -1,6 +1,7 @@
 function Player(stats) { 
 	this.name = stats.name;
 	this.isDowned = false;
+	this.statusEffects = this.statusEffects;
 	this.health = 1; // Come up with some formula that determines base health from stats
 	this.strength = stats.str;
 	this.finesse = stats.fin;
@@ -13,10 +14,6 @@ function Player(stats) {
 
 Player.prototype = new Character();
 Player.prototype.constructor = Player;
-
-Player.prototype.getHealth = function() {
-	return this.health;
-}
 
 Player.prototype.levelUp = function(stats) {
 	this.strength += stats.strength;
